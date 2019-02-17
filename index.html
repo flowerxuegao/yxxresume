@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>前端工程师简历</title>
     <script src="js/jquery-3.1.0.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/my.css">
     <link rel="stylesheet" href="css/jquery.fullpage.min.css">
@@ -20,26 +22,26 @@
         <strong>[关于我]</strong>
         <div class="content">
             <ul>
-                <li>
+                <li class = "col-xs-6 col-md-3">
                     <div class = "imgbox">
                         <img src="img/1.svg" alt="">
                     </div>
                     <div class="imginfo">年龄/25岁</div>
                 </li>
-                <li>
+                <li class = "col-xs-6 col-md-3">
                     <div class = "imgbox">
                         <img src="img/2.svg" alt="">
                     </div>
                     <div class="imginfo">学历/本科</div>
                 </li>
-                <li>
+                <li class = "col-xs-6 col-md-3">
                     <div class = "imgbox">
                         <img src="img/3.svg" alt="">
                     </div>
                     <div class="imginfo">坐标/太原</div>
                 </li>
 
-                <li>
+                <li class = "col-xs-6 col-md-3">
                     <div class = "imgbox">
                         <img src="img/4.svg" alt="">
                     </div>
@@ -56,7 +58,7 @@
         <div class="bag"></div>
         <strong>[专业技能]</strong>
         <ul class = "technology">
-            <li>
+            <li class = "col-xs-6 col-md-3">
                 <div class = "techtitle">
                    <div>HTML</div> 
                 </div>
@@ -65,7 +67,7 @@
                     <li>熟悉盒模型和各类布局方式，能够很好的还原设计图</li>
                 </ul>
             </li>
-            <li>
+            <li class = "col-xs-6 col-md-3">
                 <div class = "techtitle">
                    <div>CSS</div> 
                 </div>
@@ -75,7 +77,7 @@
                     <li>熟悉pc端，移动端、响应式网页的开发</li>
                 </ul>
             </li>
-            <li>
+            <li class = "col-xs-6 col-md-3">
                 <div class = "techtitle">
                    <div>Javascript</div> 
                 </div>
@@ -85,7 +87,7 @@
                     <li>擅长使用各种插件</li>
                 </ul>
             </li>
-            <li>
+            <li class = "col-xs-6 col-md-3">
                 <div class = "techtitle">
                    <div>目前</div> 
                 </div>
@@ -115,40 +117,56 @@
     <div class="section section5">
         <div class="bag"></div>
         <strong>[ 作品集]</strong>
-        <div class="bg51 programlist">
-            <a href="http://www.tianyangtax.com" target = "_blank"><h4>天扬网校</h4></a>
-            <p>网校的日常维护及新功能的开发，使用html,css,html5,css3,jquery,<br>ajax等技术</p>
-        </div>
-        <div class="bg52 programlist">
-            <a href="http://www.tianyangtax.net/" target = "_blank"><h4>天扬2.0版本</h4></a>
-            <p>公司官网的升级版，主要负责页面实现，浏览器兼容问题的处理，页面的响应调整</p>
-        </div>
-        <div class="bg53 programlist">
-            <a href="http://cp.tianyangtax.com" target = "_blank"><h4>管控平台</h4></a>
-            <p>公司陆续开发的各种系统，负责整体页面样式调整，用php开发部分系统功能</p>
-        </div>
-        <div class="bg54 programlist">
-            <a href="https://flowerxuegao.github.io/roomweb/" target = "_blank"><h4>3d room</h4></a>
-            <p>使用css3制作的盒子</p>
-        </div>
+        <ul class = "programbox">
+            <li class=" programlist col-xs-6 col-md-3">
+                <a href="http://www.tianyangtax.com" target = "_blank">
+                    <img src="img/bg51.png" alt="">
+                    <h4>天扬网校</h4>
+                    <p>网校的日常维护及新功能的开发，使用html,css,html5,css3,jquery,<br>ajax等技术</p>
+                </a>
+                
+            </li>
+            <li class=" programlist col-xs-6 col-md-3">
+                <a href="http://www.tianyangtax.net/" target = "_blank">
+                    <img src="img/bg52.png" alt="">
+                    <h4>天扬2.0版本</h4>
+                    <p>公司官网的升级版，主要负责页面实现，浏览器兼容问题的处理，页面的响应调整</p>
+                </a>
+            </li>
+            <li class=" programlist col-xs-6 col-md-3">
+                <a href="http://cp.tianyangtax.com" target = "_blank">
+                    <img src="img/bg53.png" alt="">
+                    <h4>管控平台</h4>
+                    <p>公司陆续开发的各种系统，负责整体页面样式调整，用php开发部分系统功能</p>
+                </a>
+            </li>
+            <li class=" programlist col-xs-6 col-md-3">
+                <a href="https://flowerxuegao.github.io/roomweb/" target = "_blank">
+                    <img src="img/bg54.png" alt="">
+                    <h4>3d room</h4>
+                    <p>使用css3制作的盒子</p>
+                </a>
+            </li>
+        </ul>
+        
     </div>
     <div class="section section6">
         <div class="bag"></div>
         <strong>[ 联系我 ]</strong>
         <ul class = "contactinfo">
-            <li>
+            <li class = "col-xs-12 col-md-4">
                 <div>
                     <span class="iconfont icon-dizhi"></span> 
                 </div>
                 <div>山西省太原市</div>
             </li>
-            <li class = "centercontactinfo">
+            <li class = "centercontactinfo col-xs-12 col-md-4">
                 <div>
                     <span class="iconfont icon-web-icon-"></span> 
                 </div>
                 <div>15234264187</div>
             </li>
-            <li>
+            <li class = "col-xs-12 col-md-4">
                 <div>
                     <span class="iconfont icon-mail"></span> 
                 </div>

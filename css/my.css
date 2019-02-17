@@ -235,7 +235,6 @@ ul,li{
 }
 .technology>li{
     float:left;
-    width:25%;
     height:328px;
     position: relative;
 
@@ -289,6 +288,7 @@ ul,li{
 }
 .programlist p{
     height:84px;
+    text-align: center;
 }
 .programlist a{
     color:#fff;
@@ -335,7 +335,7 @@ ul,li{
     margin-bottom:100px;
 }
 .content li{
-    width:250px;
+    /*width:250px;*/
     float:left;
     position: relative;
     top:0;
@@ -548,63 +548,79 @@ ul,li{
 .section4 h3 {
     background-image: url(../img/t4.png);
 }
-.active .bg51 {
+/*.active .bg51 {
     margin-left: -551px;
     opacity: 1;
     transition-delay: 0.7s;
+}*/
+.programbox{
+    width:1000px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-top:15%;
+}
+.programlist img{
+    width:130px;
+    height:146px;
+    display:block;
+    margin:0 auto;
 }
 .bg51 {
-    margin-left: -851px;
-    background: url(../img/bg51.png) 50% 0 no-repeat;
-    opacity: 0;
-    transition: all 1s;
+    /*margin-left: -851px;*/
+    background: url(../img/bg51.png) 0% 0 no-repeat;
+    /*opacity: 0;*/
+    /*transition: all 1s;*/
 }
-.active .bg52 {
+/*.active .bg52 {
     margin-left: -253px;
     opacity: 1;
     transition-delay: 0.7s;
-}
+}*/
 .bg52 {
-    margin-left: -403px;
-    background: url(../img/bg52.png) 50% 0 no-repeat;
-    opacity: 0;
-    transition: all 1s;
+    /*margin-left: -403px;*/
+    background: url(../img/bg52.png) 0% 0 no-repeat;
+ /*   opacity: 0;
+    transition: all 1s;*/
 }
-.active .bg53 {
+/*.active .bg53 {
     margin-left: 45px;
     opacity: 1;
     transition-delay: 0.7s;
-}
+}*/
 .bg53 {
-    margin-left: 195px;
-    background: url(../img/bg53.png) 50% 0 no-repeat;
-    opacity: 0;
-    transition: all 1s;
+    /*margin-left: 195px;*/
+    background: url(../img/bg53.png) 0% 0 no-repeat;
+   /* opacity: 0;
+    transition: all 1s;*/
 }
 .active .bg54 {
-    margin-left: 345px;
+    /*margin-left: 345px;*/
     opacity: 1;
-    transition-delay: 0.7s;
+    /*transition-delay: 0.7s;*/
 }
 .bg54 {
-    margin-left: 645px;
-    background: url(../img/bg54.png) 50% 0 no-repeat;
-    opacity: 0;
-    transition: all 1s;
+    /*margin-left: 645px;*/
+    background: url(../img/bg54.png) 0% 0 no-repeat;
+  /*  opacity: 0;
+    transition: all 1s;*/
 }
 .bg51, .bg52, .bg53, .bg54 {
-    position: absolute;
-    z-index: 1;
-    width: 208px;
-    left: 50%;
-    bottom: 20%;
-    padding-top: 150px;
+    /*position: absolute;*/
+    /*z-index: 1;*/
+    /*width: 208px;*/
+    /*left: 50%;*/
+    /*bottom: 20%;*/
+    /*padding-top: 150px;*/
     color: #fff;
 }
 .section h4 {
     margin-bottom: 12px;
     font-size: 23px;
     font-weight: 500;
+    text-align:center;
+}
+.experienceinfo h4{
+    text-align: left;
 }
 .section p {
     /*font-size: 14px;*/
@@ -612,11 +628,7 @@ ul,li{
 .section:nth-child(5) h3 {
     background-image: url(../img/wuzi.png);
 }
-.bg51 h4, .bg52 h4, .bg53 h4, .bg54 h4{
-    margin-bottom: 12px;
-    font-size: 23px;
-    font-weight: 500;
-}
+
 .section:nth-child(6) h3 {
     width: 561px;
     margin-left: -280px;
@@ -979,7 +991,6 @@ ul,li{
 
 }
 .contactinfo li{
-    width:300px;
     float:left;
     text-align: center;
     opacity: 0;
@@ -1009,4 +1020,73 @@ ul,li{
 .contactinfo .iconfont{
     font-size:40px;
     color:#F4D03F;
+}
+@media screen and (max-width:767px){
+    .p1701{
+        width:100%;
+        margin-left:0;;
+        left:0;
+        top:20%;
+        font-size:50px;
+    }
+    .active .p11{
+        font-size:1em;
+        width:100%;
+        margin-left:0;;
+        left:0;
+        top:55%;
+    }
+    .content,.technology,.contactinfo,.programbox{
+        width:100%;
+    }
+    .content ul{
+        margin-bottom:40px;
+    }
+    .content li{
+        margin-bottom:20px;
+    }
+    .technology{
+        margin:94px auto 0;
+    }
+    .technology>li{
+        height:260px;
+        margin-bottom:30px;
+    }
+    .technology>li .techtitle{
+        height:255px;
+        line-height: 255px;
+        font-size:26px;
+    }
+    .technology>li:hover .techtitle>div{
+        top:-60px;
+    }
+    .techinfo{
+        top:130px;
+    }
+    .section3 strong{
+        top:7%;
+    }
+    .section .experience{
+        width:80%;
+    }
+    .exp_left{
+        width:0;
+    }
+    .experienceinfo{
+        margin:0;
+    }
+    .contactinfo{
+        top:240px;
+    }
+    .section5 strong{
+        top:10%;
+
+    }
+    .programbox{
+        margin-top:35%;
+    }
+    .programlist img{
+        width: 94px;
+        height: 109px;
+    }
 }
